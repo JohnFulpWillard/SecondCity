@@ -2681,6 +2681,7 @@
 /area/vtm/interior/clinic)
 "aHS" = (
 /obj/effect/decal/cleanable/litter,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic/haven)
 "aHT" = (
@@ -11731,14 +11732,8 @@
 /turf/closed/wall/vampwall/old,
 /area/vtm/interior/tzimisce_manor)
 "cTF" = (
-/obj/effect/turf_decal/siding/grey/inner_corner{
-	dir = 8
-	},
-/obj/structure/chair/greyscale{
-	dir = 1
-	},
-/mob/living/carbon/human/npc/guard,
-/turf/open/floor/city/plating_mono,
+/obj/structure/curtain,
+/turf/open/floor/city/toilet,
 /area/vtm/interior/clinic)
 "cTG" = (
 /obj/structure/closet/crate/coffin,
@@ -18459,9 +18454,9 @@
 /turf/cordon/secret,
 /area/vtm)
 "eHD" = (
-/obj/structure/curtain,
-/turf/open/floor/city/toilet,
-/area/vtm/interior/clinic)
+/obj/machinery/light/directional/east,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/clinic/haven)
 "eHF" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/police/fed)
@@ -36519,12 +36514,9 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
 "jrM" = (
-/obj/structure/toilet{
-	dir = 1
-	},
-/obj/machinery/light/small/directional/east,
-/turf/open/floor/city/toilet,
-/area/vtm/interior/clinic)
+/obj/machinery/light/directional/east,
+/turf/open/floor/city/plating,
+/area/vtm/interior/clinic/haven)
 "jse" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/giovanni/basement)
@@ -41787,9 +41779,10 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/clinic)
 "kNo" = (
-/obj/machinery/shower/directional/south,
-/turf/open/floor/city/toilet,
-/area/vtm/interior/clinic)
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/directional/south,
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/clinic/haven)
 "kNr" = (
 /obj/structure/closet/cardboard,
 /turf/open/floor/plating/sidewalk/old,
@@ -42589,6 +42582,13 @@
 /obj/machinery/light/blacklight/directional/north,
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/cog/caern)
+"kWy" = (
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic)
 "kWB" = (
 /obj/effect/turf_decal/bordur{
 	dir = 1
@@ -47631,6 +47631,10 @@
 /obj/structure/platform/lowwall/rich/old/window,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/chantry)
+"mmM" = (
+/obj/machinery/shower/directional/south,
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic)
 "mmV" = (
 /obj/structure/toilet{
 	dir = 4
@@ -48698,6 +48702,24 @@
 	},
 /turf/open/floor/carpet/lone,
 /area/vtm/interior/tzimisce_manor)
+"mCi" = (
+/obj/structure/vampdoor/old{
+	dir = 4;
+	name = "old abandoned door";
+	desc = "A long abandoned door from before the hospital was renovated. The old asylum was condemmed by the city a while ago, nobody goes in here anymore."
+	},
+/obj/effect/mapping_helpers/door/bash_difficulty/ten,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mapping_helpers/door/lock_difficulty/seven,
+/obj/effect/turf_decal/siding/grey{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/grey{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/door/access/clinic,
+/turf/open/floor/plating/rough/cave,
+/area/vtm/interior/clinic)
 "mCj" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
@@ -59737,6 +59759,10 @@
 /obj/effect/decal/graffiti/large,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/ghetto)
+"poN" = (
+/obj/machinery/light/directional/south,
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic/haven)
 "poQ" = (
 /obj/effect/turf_decal/bordur{
 	dir = 10
@@ -91031,6 +91057,16 @@
 /obj/effect/decal/cleanable/trash,
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm/outside/ghetto)
+"xpp" = (
+/obj/effect/turf_decal/siding/grey/inner_corner{
+	dir = 8
+	},
+/obj/structure/chair/greyscale{
+	dir = 1
+	},
+/mob/living/carbon/human/npc/guard,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/clinic)
 "xpv" = (
 /obj/structure/hedge{
 	pixel_y = 6
@@ -120744,7 +120780,7 @@ dvN
 eDf
 bqp
 hjB
-hjB
+poN
 eDf
 lgB
 tlG
@@ -122549,7 +122585,7 @@ bTU
 sky
 cZB
 tlG
-tlG
+jrM
 dIB
 eDf
 uCb
@@ -124091,7 +124127,7 @@ bTU
 bTU
 bTU
 bTU
-bTU
+eHD
 bTU
 bTU
 eDf
@@ -125647,7 +125683,7 @@ eDf
 eDf
 uCb
 rhB
-rhB
+kNo
 eDf
 dvN
 dvN
@@ -189109,7 +189145,7 @@ vCa
 jxb
 bUt
 bUt
-ghM
+mCi
 xoc
 xoc
 vWG
@@ -258253,7 +258289,7 @@ syZ
 bUt
 olO
 rOK
-jrM
+kWy
 bUt
 syZ
 nJl
@@ -258509,7 +258545,7 @@ eRq
 syZ
 bUt
 bUt
-eHD
+cTF
 bUt
 bUt
 syZ
@@ -258766,7 +258802,7 @@ xsf
 wGp
 syZ
 bUt
-kNo
+mmM
 bUt
 syZ
 eHy
@@ -259021,7 +259057,7 @@ xjb
 jcx
 jcx
 xsf
-cTF
+xpp
 bUt
 bUt
 bUt
