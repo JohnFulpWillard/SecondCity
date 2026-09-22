@@ -18310,6 +18310,17 @@
 /obj/structure/railing,
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/millennium_tower/f3)
+"etJ" = (
+/obj/structure/sink{
+	pixel_y = 16;
+	dir = 6
+	},
+/obj/structure/mirror{
+	pixel_y = 32
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic)
 "etL" = (
 /obj/structure/toilet{
 	dir = 1
@@ -31078,6 +31089,11 @@
 	},
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/apartment)
+"hvq" = (
+/obj/item/statuebust/hippocratic,
+/obj/structure/table/wood,
+/turf/open/floor/wood/smooth/old,
+/area/vtm/interior/clinic/haven)
 "hvv" = (
 /obj/effect/turf_decal/bordur{
 	dir = 4
@@ -35020,6 +35036,13 @@
 	},
 /turf/open/floor/city/industrial,
 /area/vtm/interior/sewer/nosferatu_warren)
+"isb" = (
+/obj/structure/table,
+/obj/item/cane/crutch,
+/obj/item/cane/crutch,
+/obj/item/cane/crutch,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/clinic)
 "isn" = (
 /obj/machinery/light/small/red/directional/south,
 /obj/structure/bed/maint,
@@ -49714,10 +49737,8 @@
 /turf/closed/wall/vampwall/painted,
 /area/vtm/interior/hotel)
 "lSr" = (
-/obj/structure/toilet{
-	dir = 4;
-	pixel_y = 8
-	},
+/obj/machinery/shower/directional/north,
+/obj/structure/curtain,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic)
 "lSw" = (
@@ -59117,6 +59138,7 @@
 /obj/structure/table/wood,
 /obj/structure/noticeboard/directional/north,
 /obj/item/vamp/keys/camarilla,
+/obj/item/clothing/mask/vampire/venetian_mask/jester,
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/clinic/haven)
 "odT" = (
@@ -88511,6 +88533,13 @@
 /obj/effect/decal/wallpaper/blue,
 /turf/closed/wall/vampwall/city,
 /area/vtm/interior/ghetto)
+"vdt" = (
+/obj/structure/toilet{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic)
 "vdw" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/darkpack/old,
@@ -133429,7 +133458,7 @@ sPq
 bMO
 kpw
 kpw
-kpw
+hvq
 jUU
 wCu
 kpw
@@ -219730,7 +219759,7 @@ kCP
 uKX
 mem
 wPK
-tci
+isb
 joX
 kaD
 mPT
@@ -221353,8 +221382,8 @@ qqg
 cfi
 gzK
 joX
-tdc
-uMy
+etJ
+vdt
 lZy
 joX
 joX

@@ -8004,6 +8004,9 @@
 /obj/structure/fluff/paper{
 	dir = 1
 	},
+/obj/item/toy/dummy{
+	pixel_x = -4
+	},
 /turf/open/floor/carpet/lone,
 /area/vtm/interior/clinic/haven)
 "bWt" = (
@@ -9977,6 +9980,7 @@
 /area/vtm/interior/jazzclub)
 "cwn" = (
 /obj/structure/vampdoor/old,
+/obj/effect/mapping_helpers/door/access/malkavian,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "cwp" = (
@@ -11727,10 +11731,14 @@
 /turf/closed/wall/vampwall/old,
 /area/vtm/interior/tzimisce_manor)
 "cTF" = (
-/obj/structure/toilet{
+/obj/effect/turf_decal/siding/grey/inner_corner{
+	dir = 8
+	},
+/obj/structure/chair/greyscale{
 	dir = 1
 	},
-/turf/open/floor/city/toilet,
+/mob/living/carbon/human/npc/guard,
+/turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
 "cTG" = (
 /obj/structure/closet/crate/coffin,
@@ -13587,6 +13595,7 @@
 /obj/effect/mapping_helpers/door/lock_difficulty/one,
 /obj/effect/mapping_helpers/door/bash_difficulty/ten,
 /obj/effect/mapping_helpers/door/access/primogen_malkavian,
+/obj/effect/mapping_helpers/door/lock,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/clinic/haven)
 "dtG" = (
@@ -18450,12 +18459,8 @@
 /turf/cordon/secret,
 /area/vtm)
 "eHD" = (
-/mob/living/carbon/human/npc/guard,
-/obj/structure/chair/greyscale,
-/obj/effect/turf_decal/siding/grey{
-	dir = 9
-	},
-/turf/open/floor/city/plating_mono,
+/obj/structure/curtain,
+/turf/open/floor/city/toilet,
 /area/vtm/interior/clinic)
 "eHF" = (
 /turf/open/floor/wood/smooth/old,
@@ -36514,13 +36519,12 @@
 /turf/open/floor/plating/sidewalk/poor,
 /area/vtm)
 "jrM" = (
-/obj/structure/vampdoor,
-/obj/effect/mapping_helpers/door/access/malkavian,
-/obj/effect/mapping_helpers/door/lock,
-/obj/effect/mapping_helpers/door/lock_difficulty/seven,
-/obj/effect/mapping_helpers/door/bash_difficulty/seven,
-/turf/open/floor/city/plating_mono,
-/area/vtm/interior/clinic/haven)
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small/directional/east,
+/turf/open/floor/city/toilet,
+/area/vtm/interior/clinic)
 "jse" = (
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/giovanni/basement)
@@ -37667,6 +37671,7 @@
 /area/vtm/interior/sewer)
 "jFK" = (
 /obj/structure/vampdoor/old,
+/obj/effect/mapping_helpers/door/access/malkavian,
 /turf/open/floor/city/plating,
 /area/vtm/interior/clinic/haven)
 "jFV" = (
@@ -41782,12 +41787,8 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/clinic)
 "kNo" = (
-/obj/structure/chair/greyscale,
-/obj/effect/turf_decal/siding/grey{
-	dir = 10
-	},
-/obj/effect/landmark/start/darkpack/hospital/clinic_guard,
-/turf/open/floor/plating/rough,
+/obj/machinery/shower/directional/south,
+/turf/open/floor/city/toilet,
 /area/vtm/interior/clinic)
 "kNr" = (
 /obj/structure/closet/cardboard,
@@ -48267,8 +48268,11 @@
 /area/vtm/interior/strip)
 "mwA" = (
 /obj/structure/chair/greyscale,
+/obj/effect/turf_decal/siding/grey{
+	dir = 10
+	},
+/obj/effect/landmark/start/darkpack/hospital/clinic_guard,
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/siding/grey,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/clinic)
 "mwB" = (
@@ -59805,6 +59809,14 @@
 	pixel_x = -8;
 	pixel_y = 2
 	},
+/obj/item/vamp/keys/clinic{
+	pixel_y = 11;
+	pixel_x = 11
+	},
+/obj/item/vamp/keys/clinic{
+	pixel_y = 11;
+	pixel_x = 11
+	},
 /turf/open/floor/carpet/lone,
 /area/vtm/interior/clinic/haven)
 "ppP" = (
@@ -62578,13 +62590,15 @@
 /turf/open/water,
 /area/vtm/interior)
 "qba" = (
-/obj/structure/closet/crate/bin{
-	name = "sharps disposal bin"
-	},
-/obj/item/shard,
 /obj/effect/turf_decal/siding/grey{
 	dir = 1
 	},
+/obj/item/cane/crutch,
+/obj/structure/table,
+/obj/item/cane/crutch,
+/obj/item/cane/crutch,
+/obj/item/emergency_bed,
+/obj/item/emergency_bed,
 /turf/open/floor/plating/rough,
 /area/vtm/interior/clinic)
 "qbk" = (
@@ -76386,6 +76400,7 @@
 /obj/structure/vampdoor{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/door/access/malkavian,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic/haven)
 "tAS" = (
@@ -82578,7 +82593,6 @@
 /obj/item/clothing/suit/vampire/labcoat,
 /obj/item/clothing/gloves/vampire/latex,
 /obj/item/clothing/under/vampire/nurse,
-/obj/item/radio/headset/darkpack/police,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/clinic/haven)
 "vfY" = (
@@ -84847,6 +84861,7 @@
 "vMU" = (
 /obj/structure/vampdoor/old,
 /obj/effect/turf_decal/siding/white,
+/obj/effect/mapping_helpers/door/access/malkavian,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic/haven)
 "vNb" = (
@@ -88177,13 +88192,11 @@
 /turf/open/floor/wood/ornate,
 /area/vtm/interior/millennium_tower/ventrue)
 "wGp" = (
-/obj/structure/table,
-/obj/item/emergency_bed,
-/obj/item/emergency_bed,
-/obj/item/emergency_bed,
-/obj/item/emergency_bed,
-/obj/effect/turf_decal/siding/grey{
-	dir = 10
+/obj/effect/turf_decal/siding/grey/inner_corner{
+	dir = 8
+	},
+/obj/structure/chair/greyscale{
+	dir = 1
 	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
@@ -91923,6 +91936,7 @@
 /area/vtm/outside/park)
 "xAU" = (
 /obj/machinery/vending/cola,
+/obj/machinery/light/directional/west,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "xBd" = (
@@ -93688,6 +93702,7 @@
 /obj/machinery/vending/snack{
 	pixel_x = -3
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "xXD" = (
@@ -122289,7 +122304,7 @@ xXC
 bTU
 bTU
 uCb
-pDY
+rhB
 rhB
 rhB
 crW
@@ -122545,8 +122560,8 @@ eDf
 uCb
 bTU
 bTU
-eDf
 uCb
+pQI
 rhB
 qoz
 uCb
@@ -123830,9 +123845,9 @@ eDf
 uCb
 ofW
 bTU
-eDf
 uCb
 gYh
+rhB
 xdr
 liX
 oth
@@ -124088,7 +124103,7 @@ xAU
 bTU
 bTU
 uCb
-jrM
+rhB
 rhB
 eDf
 eDf
@@ -257726,8 +257741,8 @@ dgb
 dgb
 dgb
 dgb
+dgb
 hGb
-jcx
 jcx
 sSW
 oNY
@@ -257977,6 +257992,7 @@ ggt
 dHR
 jcx
 eRq
+syZ
 bUt
 bUt
 dwe
@@ -257984,7 +258000,6 @@ bUt
 bUt
 syZ
 nJl
-jcx
 bki
 jcx
 oNY
@@ -258234,14 +258249,14 @@ bUt
 nSa
 jcx
 eRq
+syZ
 bUt
 olO
-gdf
-cTF
+rOK
+jrM
 bUt
 syZ
 nJl
-jcx
 jcx
 jcx
 cEW
@@ -258491,14 +258506,14 @@ bUt
 bUt
 iDS
 eRq
+syZ
 bUt
 bUt
-bUt
+eHD
 bUt
 bUt
 syZ
 nJl
-jcx
 jcx
 jcx
 oNY
@@ -258750,12 +258765,12 @@ jcx
 xsf
 wGp
 syZ
+bUt
+kNo
+bUt
 syZ
-syZ
-syZ
-eHD
+eHy
 jfS
-jcx
 nZO
 cJa
 oNY
@@ -259006,12 +259021,12 @@ xjb
 jcx
 jcx
 xsf
-xpI
-xpI
-xpI
-xpI
+cTF
+bUt
+bUt
+bUt
+eHy
 jfS
-jcx
 oLz
 bUt
 bUt
@@ -259263,11 +259278,11 @@ bUt
 eyY
 bki
 jcx
-jcx
-jcx
-sdp
-jcx
-jcx
+xsf
+xpI
+xpI
+xpI
+jfS
 jcx
 bUt
 kCX
@@ -259521,9 +259536,9 @@ jcx
 jcx
 jcx
 jcx
-bUt
-bUt
-xpI
+sdp
+jcx
+eHy
 xpI
 bUt
 kCX
@@ -259779,8 +259794,8 @@ iic
 rdD
 iic
 bUt
-kNo
-jcx
+bUt
+jfS
 jcx
 tMg
 kCX
