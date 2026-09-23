@@ -59835,14 +59835,6 @@
 	pixel_x = -8;
 	pixel_y = 2
 	},
-/obj/item/vamp/keys/clinic{
-	pixel_y = 11;
-	pixel_x = 11
-	},
-/obj/item/vamp/keys/clinic{
-	pixel_y = 11;
-	pixel_x = 11
-	},
 /turf/open/floor/carpet/lone,
 /area/vtm/interior/clinic/haven)
 "ppP" = (
