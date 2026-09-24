@@ -92457,11 +92457,13 @@
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/graveyard)
 "xHw" = (
-/obj/structure/vampdoor/glass,
 /obj/effect/mapping_helpers/door/access/clinic,
 /obj/effect/mapping_helpers/door/lock,
 /obj/effect/mapping_helpers/door/lock_difficulty/seven,
 /obj/effect/mapping_helpers/door/bash_difficulty/seven,
+/obj/structure/vampdoor/glass{
+	name = "Psych Ward"
+	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "xHI" = (

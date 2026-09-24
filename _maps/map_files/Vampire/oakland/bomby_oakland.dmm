@@ -3389,6 +3389,20 @@
 	},
 /turf/open/floor/carpet/red,
 /area/vtm/interior)
+"aSF" = (
+/obj/effect/mapping_helpers/door/access/clinic,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/bash_difficulty/six,
+/obj/effect/mapping_helpers/door/lock_difficulty/six,
+/obj/structure/vampdoor{
+	name = "Operation Room 4"
+	},
+/obj/effect/turf_decal/siding/grey{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/grey,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/clinic)
 "aSG" = (
 /obj/structure/hedge,
 /obj/machinery/light/prince/directional/north,
@@ -16971,6 +16985,20 @@
 /obj/item/ammo_box/magazine/vamp762x51PSG1,
 /turf/open/floor/city/factory,
 /area/vtm/interior/police/upstairs)
+"eck" = (
+/obj/effect/mapping_helpers/door/access/clinic,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/bash_difficulty/six,
+/obj/effect/mapping_helpers/door/lock_difficulty/six,
+/obj/structure/vampdoor{
+	name = "Operation Room 3"
+	},
+/obj/effect/turf_decal/siding/grey{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/grey,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/clinic)
 "ecu" = (
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -33840,7 +33868,7 @@
 /obj/effect/mapping_helpers/door/bash_difficulty/six,
 /obj/effect/mapping_helpers/door/lock_difficulty/six,
 /obj/structure/vampdoor{
-	name = "Operation Room"
+	name = "Operation Room 2"
 	},
 /obj/effect/turf_decal/siding/grey{
 	dir = 1
@@ -46184,7 +46212,7 @@
 /area/vtm/interior/cog/caern)
 "kZS" = (
 /obj/fusebox/transformer{
-	name = "hospital transformer"
+	name = "clinic transformer"
 	},
 /turf/open/floor/plating/concrete,
 /area/vtm/interior/clinic)
@@ -84667,6 +84695,20 @@
 /obj/underplate,
 /turf/open/floor/city/industrial,
 /area/vtm/interior/nosferatu_office)
+"ueF" = (
+/obj/effect/mapping_helpers/door/access/clinic,
+/obj/effect/mapping_helpers/door/lock,
+/obj/effect/mapping_helpers/door/bash_difficulty/six,
+/obj/effect/mapping_helpers/door/lock_difficulty/six,
+/obj/structure/vampdoor{
+	name = "Operation Room 1"
+	},
+/obj/effect/turf_decal/siding/grey{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/grey,
+/turf/open/floor/plating/rough,
+/area/vtm/interior/clinic)
 "ueL" = (
 /obj/structure/vampdoor/prison{
 	dir = 4
@@ -178125,7 +178167,7 @@ vND
 joX
 rjY
 mMo
-ieH
+eck
 fXH
 fXH
 jJB
@@ -178133,7 +178175,7 @@ joX
 dLP
 fXH
 fXH
-ieH
+ueF
 rjY
 aiZ
 mMo
@@ -178941,7 +178983,7 @@ joX
 joX
 rjY
 mMo
-ieH
+aSF
 fXH
 fXH
 jJB
