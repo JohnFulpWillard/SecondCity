@@ -34,3 +34,5 @@
 // Required definition for Zulo carbon form rework
 #define SPECIES_ZULO_FORM "zulo"
 #define ZULO_DEFAULT_LIMB_ID "weretzi"
+
+#define MOVE_INTENT_SPRINT "sprint"

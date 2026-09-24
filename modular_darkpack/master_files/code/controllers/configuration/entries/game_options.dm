@@ -12,3 +12,11 @@
 
 /datum/config_entry/number/hunger_modifier
 	default = 0.5
+
+/datum/config_entry/number/movedelay/sprint_delay
+	integer = FALSE
+
+/datum/config_entry/number/movedelay/sprint_delay/ValidateAndSet()
+	. = ..()
+	var/datum/movespeed_modifier/config_walk_run/M = get_cached_movespeed_modifier(/datum/movespeed_modifier/config_walk_run/sprint)
+	M.sync()

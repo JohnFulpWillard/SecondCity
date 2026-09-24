@@ -15,11 +15,14 @@
 
 /datum/st_stat/attribute/stamina
 	name = "Stamina"
-	description = "Affects your maximum health. Used in Quietus."
+	description = "Hike several days with a backpack or win a marathon, this allows you to sprint and how long you can run for. At level 0, you can't sprint."
 	subcategory = "Physical"
 
 /datum/st_stat/attribute/stamina/update_mob(mob/living/our_mob, initial)
-	our_mob.recalculate_max_health(initial)
+	if(our_mob.st_get_stat(STAT_STAMINA) < 1)
+		qdel(our_mob.GetComponent(/datum/component/carbon_sprint))
+		return
+	our_mob.AddComponent(/datum/component/carbon_sprint)
 
 
 /datum/st_stat/attribute/charisma

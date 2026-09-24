@@ -1016,7 +1016,7 @@
 
 /mob/living/carbon/human/updatehealth()
 	. = ..()
-	var/health_deficiency = max((maxHealth - health), staminaloss)
+	var/health_deficiency = (maxHealth - health)//max((maxHealth - health), staminaloss) // DARKPACK EDIT - Sprinting: Staminaloss doesn't cause slowdown
 	if(health_deficiency >= 40)
 		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = health_deficiency / 75)
 	else

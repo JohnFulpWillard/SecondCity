@@ -78,6 +78,8 @@
 /mob/living/proc/get_move_intent_slowdown()
 	if(move_intent == MOVE_INTENT_WALK)
 		return /datum/movespeed_modifier/config_walk_run/walk
+	if(move_intent == MOVE_INTENT_SPRINT)
+		return /datum/movespeed_modifier/config_walk_run/sprint
 	return /datum/movespeed_modifier/config_walk_run/run
 
 /mob/living/proc/update_turf_movespeed(turf/open/turf)

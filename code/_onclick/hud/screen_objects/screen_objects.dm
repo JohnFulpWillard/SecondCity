@@ -518,7 +518,7 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen) // I hate this place
 	switch(living_hud_owner.move_intent)
 		if(MOVE_INTENT_WALK)
 			icon_state = "walking"
-		if(MOVE_INTENT_RUN)
+		if(MOVE_INTENT_RUN, MOVE_INTENT_SPRINT) // DARKPACK EDIT - Sprinting
 			icon_state = "running"
 	return ..()
 
