@@ -8336,6 +8336,10 @@
 	},
 /turf/open/floor/carpet/darkpack/bluesilver,
 /area/vtm/interior/clinic)
+"cah" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/open/floor/city/plating_mono,
+/area/vtm/interior/clinic)
 "cak" = (
 /obj/structure/table/countertop/green,
 /obj/structure/sink/basin/directional/east,
@@ -18311,14 +18315,9 @@
 /turf/open/floor/plating/sidewalk/old,
 /area/vtm/interior/millennium_tower/f3)
 "etJ" = (
-/obj/structure/sink{
-	pixel_y = 16;
-	dir = 6
-	},
-/obj/structure/mirror{
-	pixel_y = 32
-	},
 /obj/machinery/light/small/directional/east,
+/obj/structure/sink/directional/south,
+/obj/structure/mirror/directional/north,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic)
 "etL" = (
@@ -57244,16 +57243,15 @@
 /turf/open/floor/plating/rough,
 /area/vtm/interior)
 "nIc" = (
-/obj/structure/table,
-/obj/structure/reagent_dispensers/water_cooler{
-	pixel_y = 23;
-	density = 0;
-	pixel_x = -1
-	},
-/obj/item/storage/box/drinkingglasses{
-	pixel_x = 9;
-	pixel_y = 1
-	},
+/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
+/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
 "nIe" = (
@@ -85196,15 +85194,11 @@
 /turf/open/floor/carpet/royalblack,
 /area/vtm/interior/giovanni)
 "ulq" = (
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
-/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
-/obj/item/reagent_containers/cup/glass/bottle/juice/pineapplejuice,
+/obj/structure/table,
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 9;
+	pixel_y = 1
+	},
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic)
 "ulu" = (
@@ -219545,10 +219539,10 @@ pOi
 pNh
 riJ
 joX
-efS
+cah
 aAO
 mKX
-tci
+efS
 joX
 joX
 joX
@@ -219749,10 +219743,10 @@ ivH
 kaD
 qWF
 joX
-ulq
+kaD
 nob
 jZz
-tci
+ulq
 joX
 mVG
 kCP
@@ -219953,10 +219947,10 @@ joX
 nio
 joX
 joX
-nIc
+kaD
 skv
 lMM
-tci
+nIc
 joX
 wxv
 kfz
