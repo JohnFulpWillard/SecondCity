@@ -37,7 +37,7 @@
 			stopSprint()
 		return
 
-	if(HAS_TRAIT(carbon_parent, TRAIT_NO_SPRINT))
+	if(HAS_TRAIT(carbon_parent, TRAIT_NO_SPRINT) && sprinting)
 		stopSprint()
 		return
 
@@ -81,6 +81,7 @@
 	UnregisterSignal(carbon_parent, COMSIG_MOB_CLIENT_PRE_MOVE)
 	//You'll have to release and re-press to start sprinting again.
 	REMOVE_TRAIT(carbon_parent, TRAIT_NO_SPRINT, STAMINA)
+	stopSprint()
 
 /datum/component/carbon_sprint/proc/stopSprint()
 	sprinting = FALSE
