@@ -15,7 +15,7 @@
 
 /datum/st_stat/attribute/stamina
 	name = "Stamina"
-	description = "Hike several days with a backpack or win a marathon, this allows you to sprint and how long you can run for. At level 0, you can't sprint."
+	description = "Hike several days with a backpack or win a marathon, this allows you to sprint and affects how long you can run for. At 0 points, you can't sprint."
 	subcategory = "Physical"
 
 /datum/st_stat/attribute/stamina/update_mob(mob/living/our_mob, initial)
