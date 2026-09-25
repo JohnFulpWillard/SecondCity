@@ -2923,6 +2923,7 @@
 /area/vtm/interior/clinic)
 "aHS" = (
 /obj/effect/decal/cleanable/litter,
+/obj/machinery/light/small/directional/west,
 /turf/open/floor/city/toilet,
 /area/vtm/interior/clinic/haven)
 "aHW" = (
@@ -31165,8 +31166,8 @@
 /turf/open/floor/carpet/darkpack/old,
 /area/vtm/interior/hotel)
 "hzK" = (
-/obj/item/chair,
 /obj/machinery/light/directional/north,
+/obj/item/chair/darkpack,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/clinic/haven)
 "hzS" = (
@@ -33286,8 +33287,8 @@
 /area/vtm/interior/banu/haven)
 "icm" = (
 /obj/structure/table,
-/obj/item/chair,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/chair/darkpack,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/clinic/haven)
 "ict" = (
@@ -49856,7 +49857,7 @@
 /area/vtm)
 "mrL" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/chair,
+/obj/item/chair/darkpack,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/clinic/haven)
 "mrM" = (
@@ -86421,12 +86422,6 @@
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
-"vxe" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/chair,
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/clinic/haven)
 "vxi" = (
 /obj/structure/ladder/manhole/up,
 /turf/open/floor/plating/rough/cave,
@@ -125772,7 +125767,7 @@ mfd
 dvN
 rro
 rhB
-vxe
+icm
 qty
 pQI
 bTU
@@ -125786,7 +125781,7 @@ hFR
 brQ
 wDL
 bTU
-bTU
+hoI
 uCb
 bTU
 bTU
