@@ -33285,12 +33285,6 @@
 /obj/structure/stairs/north,
 /turf/open/floor/wood/smooth/old,
 /area/vtm/interior/banu/haven)
-"icm" = (
-/obj/structure/table,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/chair/darkpack,
-/turf/open/floor/city/bacotell,
-/area/vtm/interior/clinic/haven)
 "ict" = (
 /obj/effect/landmark/navigate_destination,
 /turf/open/floor/wood/smooth/old,
@@ -86422,6 +86416,12 @@
 	},
 /turf/open/floor/carpet/darkpack,
 /area/vtm/interior/chantry)
+"vxe" = (
+/obj/structure/table,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/chair/darkpack,
+/turf/open/floor/city/bacotell,
+/area/vtm/interior/clinic/haven)
 "vxi" = (
 /obj/structure/ladder/manhole/up,
 /turf/open/floor/plating/rough/cave,
@@ -94663,7 +94663,7 @@
 /area/vtm/interior/chantry)
 "xAU" = (
 /obj/machinery/vending/cola,
-/obj/machinery/light/directional/west,
+/obj/machinery/light/directional/north,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "xBc" = (
@@ -96350,7 +96350,7 @@
 /obj/machinery/vending/snack{
 	pixel_x = -3
 	},
-/obj/machinery/light/directional/east,
+/obj/machinery/light/directional/north,
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/clinic/haven)
 "xXD" = (
@@ -124481,7 +124481,7 @@ iik
 mfd
 dvN
 rro
-icm
+vxe
 tsX
 rhB
 pQI
@@ -125767,7 +125767,7 @@ mfd
 dvN
 rro
 rhB
-icm
+vxe
 qty
 pQI
 bTU
