@@ -26,7 +26,6 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	circuit = /obj/item/circuitboard/computer/libraryconsole
 	desc = "Checked out books MUST be returned on time."
 	anchored_tabletop_offset = 8
-	var/library_type = "library"
 	///The current book id we're searching for
 	var/book_id = null
 	///The current title we're searching for
@@ -191,13 +190,14 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	return TRUE
 
 /obj/machinery/computer/libraryconsole/proc/hash_search_info()
-	return "[GLOB.library_table_modified]-[book_id]-[title]-[author]-[category]-[search_page]-[page_count]-[library_type]"
+	return "[GLOB.library_table_modified]-[book_id]-[title]-[author]-[category]-[search_page]-[page_count]-[library_type]" // CRIMSON GRID EDIT - Corax Library
 
 /obj/machinery/computer/libraryconsole/proc/update_page_contents()
 	if(sending_request) //Final defense against nerds spamming db requests
 		return
 	sending_request = TRUE
 	search_page = clamp(search_page, 0, page_count)
+	// CRIMSON GRID EDIT - Corax Library
 	var/datum/db_query/query_library_list_books = SSdbcore.NewQuery({"
 		SELECT author, title, category, id
 		FROM [format_table_name(library_type)]
@@ -227,6 +227,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 
 /obj/machinery/computer/libraryconsole/proc/update_page_count()
 	var/bookcount = 0
+	// CRIMSON GRID EDIT - Corax Library
 	var/datum/db_query/query_library_count_books = SSdbcore.NewQuery({"
 		SELECT COUNT(id) FROM [format_table_name(library_type)]
 		WHERE isnull(deleted)
@@ -317,10 +318,6 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	COOLDOWN_DECLARE(printer_cooldown)
 	///Our cooldown on publishing books to the newscaster's "book club" channel
 	COOLDOWN_DECLARE(newscaster_cooldown)
-
-/obj/machinery/computer/libraryconsole/bookmanagement/corax
-	name = "corax book inventory management console"
-	library_type = "corax"
 
 /obj/machinery/computer/libraryconsole/bookmanagement/Initialize(mapload)
 	. = ..()
@@ -620,6 +617,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 		say("No content detected. Aborting")
 		return
 	var/msg = "has uploaded the book titled [book.title], [length(book.content)] signs"
+	// CRIMSON GRID EDIT - Corax Library
 	var/datum/db_query/query_library_upload = SSdbcore.NewQuery({"
 		INSERT INTO [format_table_name(library_type)] (author, title, content, category, ckey, datetime, round_id_created)
 		VALUES (:author, :title, :content, :category, :ckey, Now(), :round_id)
@@ -666,6 +664,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 		can_connect = FALSE
 		return
 
+	// CRIMSON GRID EDIT - Corax Library
 	var/datum/db_query/query_library_print = SSdbcore.NewQuery(
 		"SELECT * FROM [format_table_name(library_type)] WHERE id=:id AND isnull(deleted)",
 		list("id" = id)
