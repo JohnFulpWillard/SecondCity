@@ -51,10 +51,15 @@
 
 // CRIMSON EDIT ADD - #206
 /obj/machinery/fax/clinic
-	fax_name = "Saint Johns Hospital"
+	fax_name = "Saint Johns Clinic"
 	fax_id = "clinic"
-	special_networks = list(clinicadmin = list(fax_name = "Saint Johns Hospital", fax_id = "clinicadmin", color = "blue", emag_needed = FALSE))
+	special_networks = list(clinicadmin = list(fax_name = "Saint Johns Clinic", fax_id = "clinicadmin", color = "blue", emag_needed = FALSE))
 // CRIMSON EDIT ADD END - #206
+
+/obj/machinery/fax/corax
+	fax_name = "Helios Overnight Services"
+	fax_id = "corax"
+	special_networks = list(clinicadmin = list(fax_name = "Helios Overnight Services", fax_id = "coraxadmin", color = "blue", emag_needed = FALSE))
 
 /obj/machinery/fax/anarch
 	fax_name = "Anarchy Rose Bar"
