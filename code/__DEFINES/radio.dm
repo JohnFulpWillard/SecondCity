@@ -102,7 +102,7 @@
 #define RADIO_CHANNEL_CORAX "Corax"
 #define RADIO_KEY_CORAX "x"
 #define RADIO_TOKEN_CORAX ":dx"
-#define RADIO_COLOR_CORAX "#d80606"
+#define RADIO_COLOR_CORAX "#1d307c"
 
 // DARKPACK EDIT ADD END
 

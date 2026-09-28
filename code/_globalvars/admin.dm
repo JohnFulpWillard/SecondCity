@@ -65,6 +65,7 @@ GLOBAL_LIST_INIT(spanname_to_formatting, list(
 	"Centcom Radio" = "centcomradio",
 	"Changeling" = "changeling",
 	"Clinic Radio" = "clinicradio", // DARKPACK EDIT ADD
+	"Corax Radio" = "coraxradio", // DARKPACK EDIT ADD
 	"Clown" = "clown",
 	"Colossus" = "colossus",
 	"Command Headset" = "command_headset",

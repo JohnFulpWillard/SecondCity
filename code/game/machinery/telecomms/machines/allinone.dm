@@ -79,7 +79,7 @@
 		),
 		"[FREQ_CORAX]" = list(
 			"name" = RADIO_CHANNEL_CORAX,
-			"color" = RADIO_COLOR_CORAX
+			"color" = RADIO_COLOR_CORAX,
 		) // DARKPACK EDIT ADD END
 	)
 

@@ -8,7 +8,7 @@
 	. = ..()
 	frequency_infos["[FREQ_CORAX]"] = list(
 		"name" = RADIO_CHANNEL_CORAX,
-		"color" = RADIO_COLOR_CORAX
+		"color" = RADIO_COLOR_CORAX,
 	)
 
 /obj/machinery/telecomms/bus/darkpack/corax
