@@ -164,7 +164,7 @@
 #define FREQ_CAMARILLA 1507 // Camarilla comms frequency, purple
 #define FREQ_ANARCH 1509 // Anarch comms frequency, dark orange
 #define FREQ_ENDRON 1511 // Endron comms frequency, orange
-#define FREQ_CORAX 1513 // Corax comms frequency, red
+#define FREQ_CORAX 1513 // Corax comms frequency, blueish purple
 // DARKPACK EDIT ADD END
 
 #define MAX_FREE_FREQ 1599 // -------------------------------------------------
