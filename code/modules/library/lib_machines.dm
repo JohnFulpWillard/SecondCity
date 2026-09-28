@@ -26,6 +26,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	circuit = /obj/item/circuitboard/computer/libraryconsole
 	desc = "Checked out books MUST be returned on time."
 	anchored_tabletop_offset = 8
+	var/library_type = "library"
 	///The current book id we're searching for
 	var/book_id = null
 	///The current title we're searching for
@@ -190,7 +191,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	return TRUE
 
 /obj/machinery/computer/libraryconsole/proc/hash_search_info()
-	return "[GLOB.library_table_modified]-[book_id]-[title]-[author]-[category]-[search_page]-[page_count]"
+	return "[GLOB.library_table_modified]-[book_id]-[title]-[author]-[category]-[search_page]-[page_count]-[library_type]"
 
 /obj/machinery/computer/libraryconsole/proc/update_page_contents()
 	if(sending_request) //Final defense against nerds spamming db requests
@@ -199,7 +200,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	search_page = clamp(search_page, 0, page_count)
 	var/datum/db_query/query_library_list_books = SSdbcore.NewQuery({"
 		SELECT author, title, category, id
-		FROM [format_table_name("library")]
+		FROM [format_table_name(library_type)]
 		WHERE isnull(deleted)
 			AND author LIKE CONCAT('%',:author,'%')
 			AND title LIKE CONCAT('%',:title,'%')
@@ -227,7 +228,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 /obj/machinery/computer/libraryconsole/proc/update_page_count()
 	var/bookcount = 0
 	var/datum/db_query/query_library_count_books = SSdbcore.NewQuery({"
-		SELECT COUNT(id) FROM [format_table_name("library")]
+		SELECT COUNT(id) FROM [format_table_name(library_type)]
 		WHERE isnull(deleted)
 			AND author LIKE CONCAT('%',:author,'%')
 			AND title LIKE CONCAT('%',:title,'%')
@@ -287,6 +288,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	icon_keyboard = null
 	circuit = /obj/item/circuitboard/computer/libraryconsole
 	interface_type = "LibraryConsole"
+
 	///Can spawn secret lore item
 	var/can_spawn_lore = TRUE
 	///The screen we're currently on, sent to the ui
@@ -315,6 +317,10 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 	COOLDOWN_DECLARE(printer_cooldown)
 	///Our cooldown on publishing books to the newscaster's "book club" channel
 	COOLDOWN_DECLARE(newscaster_cooldown)
+
+/obj/machinery/computer/libraryconsole/bookmanagement/corax
+	name = "corax book inventory management console"
+	library_type = "corax"
 
 /obj/machinery/computer/libraryconsole/bookmanagement/Initialize(mapload)
 	. = ..()
@@ -615,7 +621,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 		return
 	var/msg = "has uploaded the book titled [book.title], [length(book.content)] signs"
 	var/datum/db_query/query_library_upload = SSdbcore.NewQuery({"
-		INSERT INTO [format_table_name("library")] (author, title, content, category, ckey, datetime, round_id_created)
+		INSERT INTO [format_table_name(library_type)] (author, title, content, category, ckey, datetime, round_id_created)
 		VALUES (:author, :title, :content, :category, :ckey, Now(), :round_id)
 	"}, list("title" = book.title, "author" = book.author, "content" = book.content, "category" = upload_category, "ckey" = usr.ckey, "round_id" = GLOB.round_id))
 	if(!query_library_upload.Execute())
@@ -661,7 +667,7 @@ GLOBAL_VAR_INIT(library_table_modified, 0)
 		return
 
 	var/datum/db_query/query_library_print = SSdbcore.NewQuery(
-		"SELECT * FROM [format_table_name("library")] WHERE id=:id AND isnull(deleted)",
+		"SELECT * FROM [format_table_name(library_type)] WHERE id=:id AND isnull(deleted)",
 		list("id" = id)
 	)
 	if(!query_library_print.Execute())
