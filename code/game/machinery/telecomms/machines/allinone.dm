@@ -76,7 +76,7 @@
 		"[FREQ_ENDRON]" = list(
 			"name" = RADIO_CHANNEL_ENDRON,
 			"color" = RADIO_COLOR_ENDRON
-		)
+		),
 		"[FREQ_CORAX]" = list(
 			"name" = RADIO_CHANNEL_CORAX,
 			"color" = RADIO_COLOR_CORAX
