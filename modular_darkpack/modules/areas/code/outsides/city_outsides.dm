@@ -59,6 +59,12 @@
 /area/vtm/outside/fishermanswharf/industrial
 	name = "Fisherman's Wharf - Industrial District"
 
+/area/vtm/outside/fishermanswharf/ferris_wheel
+	name = "Ferris Wheel"
+	icon_state = "fishermanswharf"
+	ambient_buzz = 'modular_darkpack/modules/ambience/sounds/city_01.ogg'
+	domain = FALSE
+
 /area/vtm/outside/northbeach
 	name = "North Beach"
 	icon_state = "northbeach"
