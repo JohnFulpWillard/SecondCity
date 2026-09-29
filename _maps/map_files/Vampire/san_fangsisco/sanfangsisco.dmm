@@ -65841,7 +65841,10 @@
 /turf/open/floor/city/plating_mono,
 /area/vtm/interior/endron_facility/plant)
 "qqA" = (
-/obj/structure/fluff/tv,
+/obj/structure/fluff/tv{
+	pixel_y = 8
+	},
+/obj/structure/table/wood,
 /turf/open/floor/city/bacotell,
 /area/vtm/interior/clinic/haven)
 "qqC" = (
